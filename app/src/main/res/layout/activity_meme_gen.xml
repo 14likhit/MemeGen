@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
+    tools:context="com.example.likhit.memegen.MemeGen">
+
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.example.likhit.memegen.TopFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/topfragment" />
+
+    <fragment
+        android:id="@+id/fragment3"
+        android:name="com.example.likhit.memegen.BottomFragment"
+        android:layout_width="275dp"
+        android:layout_height="275dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment2"
+        tools:layout="@layout/bottomfragment" />
+</android.support.constraint.ConstraintLayout>
